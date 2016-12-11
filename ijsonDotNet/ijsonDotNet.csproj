@@ -49,6 +49,7 @@
     <Compile Include="Common.cs" />
     <Compile Include="EnumsAndTypes.cs" />
     <Compile Include="ijsonDotNet.cs" />
+    <Compile Include="ObjectBuilder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -28,9 +28,9 @@ namespace ijsonDotNetTests
             var ijson = new ijsonParser();
             //using (var f = new StreamReader(new MemoryStream(Encoding.UTF8.GetBytes(json1))))
             using (var f = new StreamReader(@"C:\Users\epilsits\Documents\src\modoffers\test.json"))
-                foreach (var evt in ijson.parse(f))
+                foreach (var evt in ijson.Parse(f))
                     Console.WriteLine(string.Format("Prefix: {0}, Token: {1}, Value: {2}",
-                        evt.prefix, evt.type, evt.value));
+                        evt.Prefix, evt.Type, evt.Value));
         }
 
         [TestMethod]
@@ -39,7 +39,7 @@ namespace ijsonDotNetTests
             var ijson = new ijsonParser();
             //using (var f = new StreamReader(new MemoryStream(Encoding.UTF8.GetBytes(json1))))
             using (var f = new StreamReader(@"C:\Users\epilsits\Documents\src\modoffers\test.json"))
-                Console.Write(ijson.pretty(f));
+                Console.Write(ijson.Pretty(f));
         }
 
         [TestMethod]
@@ -48,7 +48,7 @@ namespace ijsonDotNetTests
             var ijson = new ijsonParser();
             //using (var f = new StreamReader(new MemoryStream(Encoding.UTF8.GetBytes(json1))))
             using (var f = new StreamReader(@"C:\Users\epilsits\Documents\src\modoffers\test.json"))
-                Console.Write(ijson.minify(f));
+                Console.Write(ijson.Minify(f));
         }
     }
 }
